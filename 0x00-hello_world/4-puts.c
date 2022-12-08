@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - entry point
+ * return: the output value
  */
 int main(void)
 {
