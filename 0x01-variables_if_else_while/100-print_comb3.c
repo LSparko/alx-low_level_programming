@@ -5,25 +5,25 @@
 */
 int main(void)
 {
-	int a = 0;
-	int b = 0;
+	int a = 48;
+	int b = 49;
 
-	while (a < 10)
+	while (a < 57)
 	{
-		while (b < 10)
+		while (b < 58)
 		{
-			putchar(a + '0');
-			putchar(b + '0');
-			if (a < 9 && b < 9)
+			putchar(a);
+			putchar(b);
+			if (a < 56 && b < 57)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(44);
+				putchar(32);
 			}
 			a++;
 			b++;
 		}
 	}
 	putchar('\n');
-		return (0);
+	return (0);
 }
 
