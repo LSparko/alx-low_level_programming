@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_diagonal - print a diagonal using the \ character
  * @n: number of times to print \
@@ -18,8 +19,10 @@ void print_diagonal(int n)
 
 			if (diag == n - 1)
 				continue;
+
 			_putchar('\n');
 		}
 	}
-	_putchar('\n')
+
+	_putchar('\n');
 }
