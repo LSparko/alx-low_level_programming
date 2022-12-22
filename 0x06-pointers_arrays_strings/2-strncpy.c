@@ -11,24 +11,18 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int indx = 0, src_len = 0;
+	if (dest == NULL)
+		return (NULL);
 
-	while (src[indx++])
-		src_len++;
+	char *len = dest;
 
-	if (src_len > n)
+	while (*src && n--)
 	{
-		for (indx = 0; indx < n; indx++)
-			dest[indx] = src[indx];
+		*dest = *src;
+		dest++;
+		src++;
 	}
 
-	else
-	{
-		for (indx = 0; indx < src_len; indx++)
-			dest[indx] = src[indx];
+	*dest = '\0';
 
-		dest[indx] = '\0';
-	}
-
-	return (dest);
-}
+	return (len);
