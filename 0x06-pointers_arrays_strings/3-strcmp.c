@@ -26,5 +26,6 @@ int _strcmp(char *s1, char *s2)
 	else if (s1_len < s2_len)
 		return (-15);
 
-	return (0);
+	else
+		return (0);
 }
