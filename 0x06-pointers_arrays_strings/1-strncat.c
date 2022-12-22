@@ -27,8 +27,8 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	else
 	{
-		for (src_a = 0; src_ a < src_b; src_a++)
-			dest[dest b++] = src[src_a];
+		for (src_a = 0; src_a < src_b; src_a++)
+			dest[dest_b++] = src[src_a];
 	}
 
 	return (dest);
