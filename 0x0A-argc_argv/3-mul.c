@@ -2,12 +2,12 @@
 #include <stdlib.h>
 /**
  * main - multiplies two numbers
- * argc: number of arguements
+ * @argc: number of arguements
  * @argv: pointer to an array of arguements
  *
  * Return: 1 if program does not recieve two arguements
- * 	and 0 if it recieves two arguements
-*/ 	
+ * and 0 if it recieves two arguements
+*/
 
 int main(int argc, char *argv[])
 {
