@@ -3,7 +3,7 @@
 /**
  * main - print number of arguements passed to it
  * @argc: number of arguement passed
- * @argv: an array of strings of arguement
+ * @argv:  array of pointers to arguements
  *
  * Return: 0
 */
