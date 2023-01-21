@@ -43,7 +43,7 @@ void print_float(va_list arg)
 {
 	float num;
 
-	numc = va_arg(arg, double);
+	num = va_arg(arg, double);
 	printf("%f", num);
 }
 
