@@ -41,10 +41,10 @@ void print_int(va_list arg)
 
 void print_float(va_list arg)
 {
-	float dec;
+	float num;
 
-	dec = va_arg(arg, double);
-	printf("%f", dec);
+	numc = va_arg(arg, double);
+	printf("%f", num);
 }
 
 /**
