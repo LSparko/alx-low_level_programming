@@ -78,7 +78,7 @@ void print_string(va_list arg)
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int a = 0, b = 0;
+	int i = 0, b = 0;
 	char *separator = "";
 	printer_X funcs[] = {
 		{"c", print_char},
@@ -89,11 +89,11 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (format && (*(format + a)))
+	while (format && (*(format + i)))
 	{
 		b = 0;
 
-		while (b < 4 && (*(format + a) != *(funcs[b].symbol)))
+		while (b < 4 && (*(format + i) != *(funcs[b].symbol)))
 			b++;
 
 		if (b < 4)
@@ -103,7 +103,7 @@ void print_all(const char * const format, ...)
 			separator = ", ";
 		}
 
-		a++;
+		i++;
 
 	}
 
